@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jingrui Zhou, Jiawei Hu">
+    <title>WeRecipe</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>WeRecipe</h1>
+    </header>
+    <main>
+        <section id="recipe-form-section">
+            <h2>Add a New Recipe</h2>
+            <form id="recipe-form">
+                <p>Enter the title you want for your recipe: </p>
+                <input type="text" id="title" placeholder="Title" required><br>
+                <p>What are the ingredients?: </p>
+                <textarea id="ingredients" placeholder="Ingredients" required></textarea><br>
+                <p>A Step to Step Instruction might help: </p>
+                <textarea id="instructions" placeholder="Instructions" required></textarea><br>
+                <p>Enter the name your want to show as the author: </p>
+                <input type="text" id="author" placeholder="Author" required><br><br>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+        <section id="recipe-list-section">
+            <h2>Recipe List</h2>
+            <ul id="recipe-list"></ul>
+        </section>
+    </main>
+    <script src="./javascripts/index.js"></script>
+</body>
+</html>
